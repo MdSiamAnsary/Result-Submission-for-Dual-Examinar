@@ -9,10 +9,8 @@
  
 ## Work Information
 <br />
-This has been done as an assignment for the<br/>
-Web Technology and Internet Computing course<br/>
-of Master in Information Technology 22 Batch of<br/>
-Institute of Information Technology, Dhaka University. 
+This has been done as an assignment for the Web Technology and Internet Computing course<br/>
+of Master in Information Technology 22 Batch of Institute of Information Technology, Dhaka University. 
 
 <br/>
 Course : Web Technology and Internet Computing<br/>
