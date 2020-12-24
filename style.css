@@ -1,0 +1,14 @@
+body 
+{
+	background-color:#eee;
+}
+
+.container-fluid 
+{
+	padding:50px;
+}
+
+.container
+{
+	background-color:white;padding:50px;   
+}
