@@ -90,10 +90,9 @@ include_once('dbcon.php');
           <br>
           
           <h2 id="siteid">Result Submission for Dual Examinar</h2>
+
           
-          <p id="sitedescription" style="color: #000; font-size: 1.2em; font-family: lora ">
-            
-          </p>
+
         </div>
       </div>
     </div>
@@ -116,6 +115,26 @@ include_once('dbcon.php');
         style="font-family: Lora; font-size: 1.5em; color: white; font-style: bold">Display marks of all students </a>
 
       </div>
+
+      <ul id="description" class="list-group" style="font-family: Cambria; font-size: 1.2em; ">
+            <li id="info1" class="list-group-item list-group-item-primary" style="text-align: justify; color: rgb(0, 0, 139); font-weight: bold;">
+              Each student is associated with three courses.
+            </li>
+            <li id="info2" class="list-group-item list-group-item-primary" style="text-align: justify; color: rgb(0, 0, 139); font-weight: bold;">
+              Two teachers teach a single course and all teachers have to be registered with the system to enter marks.
+            </li>
+            <li id="info3" class="list-group-item list-group-item-primary" style="text-align: justify; color: rgb(0, 0, 139); font-weight: bold;">
+              For a student, a teacher has to enter quiz marks (between 0 and 40) and final marks (between 0 and 60) for a course.
+            </li>
+            <li id="info4" class="list-group-item list-group-item-primary" style="text-align: justify; color: rgb(0, 0, 139); font-weight: bold;">
+              If the entered total marks for a student in a course from the two teachers differ by 20 marks, then, scripts need to be rechecked.
+            </li>
+
+            <li id="info5" class="list-group-item list-group-item-primary" style="text-align: justify; color: rgb(0, 0, 139); font-weight: bold;">
+              If for a student, two teachers have not entered marks in a course, result for the course cannot be calculated. 
+            </li>
+
+          </ul>
 
     </div>
   </section> 
