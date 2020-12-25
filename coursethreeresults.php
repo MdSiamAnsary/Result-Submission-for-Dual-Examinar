@@ -122,7 +122,7 @@ include_once('dbcon.php');
         <?php
 
 
-          $sql = "SELECT * FROM marks_table";
+          $sql = "SELECT * FROM marks_table order by studentid";
           $result = mysqli_query($conn, $sql);
 
           if (mysqli_num_rows($result) > 0) 
@@ -159,7 +159,7 @@ include_once('dbcon.php');
 
                     if(abs($teacher1marks - $teacher2marks) > 20)
                     {
-                      $msg = "Marks from two teachers vary greatly. Scripts should be rechecked.";
+                      $msg = "Scripts should be rechecked.";
                     }
                     else
                     {
