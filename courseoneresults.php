@@ -41,6 +41,22 @@ include_once('dbcon.php');
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
+
+  <style type="text/css">
+    
+
+    table
+    {
+      background-image: linear-gradient(to bottom right, rgb(252, 215, 212), rgb(230, 236, 242));
+      border: none;
+      align-self: center;
+      font-family: lora;
+      font-size: 1.7em;
+      text-align: center;
+    }
+
+  </style>
+
  
 
 
@@ -79,7 +95,6 @@ include_once('dbcon.php');
             style="font-family: Lora; font-size: 1.2em; color: white; font-style: bold">Course 2 Results</a></li>
           <li><a id="navl2" href="coursethreeresults.php" class="btn btn-success" 
             style="font-family: Lora; font-size: 1.2em; color: white; font-style: bold">Course 3 Results</a></li>
-          
         </ul>
       </nav>
       <a id="logout" href="logout.php" class="get-started-btn scrollto">LOG OUT</a>
@@ -91,13 +106,7 @@ include_once('dbcon.php');
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
       <div class="row justify-content-center">
         <div class="section-title">
-          <br>
-          
           <h2 id="siteid">Course 1 Results</h2>
-          
-          <p id="sitedescription" style="color: #000; font-size: 1.2em; font-family: lora ">
-            
-          </p>
         </div>
       </div>
     </div>
@@ -110,14 +119,80 @@ include_once('dbcon.php');
 
       <div class="section-title" style="width: 70%; margin-right: auto;margin-left: auto;">
 
-        <a id="navl1" href="marksentry.php" class="btn btn-primary btn-lg btn-block" 
-        style="font-family: Lora; font-size: 1.5em; color: white; font-style: bold">Enter Marks</a>
+        <?php
 
-        <a id="navl2" href="marksentry.php" class="btn btn-primary btn-lg btn-block" 
-        style="font-family: Lora; font-size: 1.5em; color: white; font-style: bold">Display marks by course</a>
 
-        <a id="navl3" href="marksentry.php" class="btn btn-primary btn-lg btn-block" 
-        style="font-family: Lora; font-size: 1.5em; color: white; font-style: bold">Display marks of all students </a>
+          $sql = "SELECT * FROM marks_table";
+          $result = mysqli_query($conn, $sql);
+
+          if (mysqli_num_rows($result) > 0) 
+          {
+
+            echo "<div class='container>'";
+
+            echo "<html><body><table id='courseoneresults' align = 'center' class=\"table table-hover\" style='max-width: 80%;'>\n";
+
+            echo "<tr>";
+            echo "<th class=\"text-center\"> Student ID </th>";
+            echo "<th class=\"text-center\"> Total Marks in Course 1 </th>";
+            echo "</tr>";
+
+            while($row = mysqli_fetch_assoc($result)) 
+            {
+
+                  $studentid_fromdb = $row['studentid'];
+
+                  if(empty($row['course1quizteacher1']) || empty($row['course1quizteacher2']))
+                  {
+                    $msg = "Both teachers have not yet entered results";
+                  }
+                  else
+                  {
+                    $quizmarkteacher1_fromdb = (float)$row['course1quizteacher1'];
+                    $quizmarkteacher2_fromdb = (float)$row['course1quizteacher2'];
+
+                    $finalmarkteacher1_fromdb = (float)$row['course1finalteacher1'];
+                    $finalmarkteacher2_fromdb = (float)$row['course1finalteacher2'];
+
+                    $teacher1marks = $quizmarkteacher1_fromdb + $finalmarkteacher1_fromdb;
+                    $teacher2marks = $quizmarkteacher2_fromdb + $finalmarkteacher2_fromdb;
+
+                    if(abs($teacher1marks - $teacher2marks) > 20)
+                    {
+                      $msg = "Marks from two teachers vary greatly. Scripts should be rechecked.";
+                    }
+                    else
+                    {
+                      $studentmark = ($teacher2marks + $teacher1marks) / 2;
+                      $msg = "Mark : " . $studentmark;
+                    }
+                  }
+
+                  echo "<tr>";
+                  echo "<td>". $studentid_fromdb . "</td>";
+                  echo "<td>". $msg ."</td>";
+                  echo "</tr>";
+            }
+          } 
+          else 
+          {
+
+              echo "<div class='container>'";
+              echo "<html><body><table id='courseoneresults' align = 'center' class=\"table table-hover\" style='max-width: 80%;'>\n";
+              echo "<tr>";
+              echo "<th class=\"text-center\"> Student ID </th>";
+              echo "<th class=\"text-center\"> Total Marks in Course 1 </th>";
+              echo "</tr>";
+                
+              echo "<tr>";
+              echo "<td colspan=\"2\">". "No records" . "</td>";
+              echo "</tr>";
+          }
+  
+          echo "\n</table></body></html>";
+          echo "</div>";
+
+        ?>
 
       </div>
 
