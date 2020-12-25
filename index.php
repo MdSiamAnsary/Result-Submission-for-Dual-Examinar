@@ -248,6 +248,9 @@
 				<BR>
 				Result Submission for Dual Examinar
 			</h2>
+
+
+            
 			 
  			<hr>
 			<div class="row">
@@ -322,6 +325,8 @@
 						</fieldset>
 					</form>
 				</div>
+
+
 				
 				<div class="col-md-2">
 					
