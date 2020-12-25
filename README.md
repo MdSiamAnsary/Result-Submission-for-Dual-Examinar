@@ -11,11 +11,11 @@
 ### Registration and Log in 
 To be able to use the system, one has to be a registered user. 
 
-To register, one has to provided four pieces of information. They are 
+To register, one has to provided four pieces of information on mandatory basis. They are 
 - **Full name** The name should be valid. 
 - **Username** Username can be of length between 6 and 20
 - **Email** Email has to be valid
-- **Password** Password can be of length between 6 and 10
+- **Password** Password can be of length between 6 and 10. (Rather than using plaintext, password is encrypted)
 
 Username, email and password need to be unique.  
 
