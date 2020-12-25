@@ -47,7 +47,7 @@
         	$count = mysqli_num_rows($result);
         	$row = mysqli_fetch_assoc($result);
 
-        	if($count==1 && $row['password'] == $password)
+        	if($count==1 && $row['password'] == hash('sha512', $password))
         	{
             	$_SESSION['username'] = $row['username'];
             	header('location: home.php');
@@ -191,6 +191,7 @@
             $regMsg = 'Registration unsuccessful';
         }
         //----------------------------Password field must be unique------------------------------------
+        $password= hash('sha512', $password);
         $sql = "select * from  teachers_table where password='$password' ";
         $result = mysqli_query($conn, $sql);
         $count = mysqli_num_rows($result);
