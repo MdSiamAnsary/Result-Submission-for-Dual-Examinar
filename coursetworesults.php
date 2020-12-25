@@ -164,7 +164,7 @@ include_once('dbcon.php');
                     else
                     {
                       $studentmark = ($teacher2marks + $teacher1marks) / 2;
-                      $msg = "Mark : " . $studentmark;
+                      $msg = "Marks : " . $studentmark;
                     }
                   }
 
