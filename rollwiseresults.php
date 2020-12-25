@@ -165,7 +165,7 @@ include_once('dbcon.php');
 
                     if(abs($teacher1marks - $teacher2marks) > 20)
                     {
-                      $msgcoursethree = "Marks from two teachers vary greatly. Scripts should be rechecked.";
+                      $msgcoursethree = "Marks in Course 3 : Scripts should be rechecked.";
                     }
                     else
                     {
@@ -192,7 +192,7 @@ include_once('dbcon.php');
 
                     if(abs($teacher1marks - $teacher2marks) > 20)
                     {
-                      $msgcourseone = "Marks from two teachers vary greatly. Scripts should be rechecked.";
+                      $msgcourseone = "Marks in Course 1 : Scripts should be rechecked.";
                     }
                     else
                     {
@@ -218,7 +218,7 @@ include_once('dbcon.php');
 
                     if(abs($teacher1marks - $teacher2marks) > 20)
                     {
-                      $msgcoursetwo = "Marks from two teachers vary greatly. Scripts should be rechecked.";
+                      $msgcoursetwo = "Marks in Course 2 : Scripts should be rechecked.";
                     }
                     else
                     {
