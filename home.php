@@ -53,7 +53,7 @@ include_once('dbcon.php');
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
       <h1 style="font-family: LORA" class="logo mr-auto">
-        <!-- <a href="home.php"> -->
+        <a href="home.php">
         <?php
 
           $con=mysqli_connect("127.0.0.1","root","","resultsubmissionfordualexaminar");
@@ -66,7 +66,7 @@ include_once('dbcon.php');
           }
 
         ?>
-        <!-- </a> -->
+        </a>
       </h1>
         
       <nav class="nav-menu d-none d-lg-block">
@@ -112,7 +112,7 @@ include_once('dbcon.php');
         <a id="navl2" href="courseoneresults.php" class="btn btn-primary btn-lg btn-block" 
         style="font-family: Lora; font-size: 1.5em; color: white; font-style: bold">Display marks by course</a>
 
-        <a id="navl3" href="marksentry.php" class="btn btn-primary btn-lg btn-block" 
+        <a id="navl3" href="rollwiseresults.php" class="btn btn-primary btn-lg btn-block" 
         style="font-family: Lora; font-size: 1.5em; color: white; font-style: bold">Display marks of all students </a>
 
       </div>

@@ -359,8 +359,7 @@ if (isset($_POST['btn-marksentry']))
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
-            <h1 style="font-family: LORA" class="logo mr-auto">
-        <!-- <a href="home.php"> -->
+            <h1 style="font-family: LORA" class="logo mr-auto"> <a href="home.php">
             <?php
 
             $con=mysqli_connect("127.0.0.1","root","","resultsubmissionfordualexaminar");
@@ -373,7 +372,7 @@ if (isset($_POST['btn-marksentry']))
             }
 
             ?>
-            <!-- </a> -->
+            </a>
         </h1>
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
