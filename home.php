@@ -127,7 +127,7 @@ include_once('dbcon.php');
               For a student, a teacher has to enter quiz marks (between 0 and 40) and final marks (between 0 and 60) for a course.
             </li>
             <li id="info4" class="list-group-item list-group-item-primary" style="text-align: justify; color: rgb(0, 0, 139); font-weight: bold;">
-              If the entered total marks for a student in a course from the two teachers differ by 20 marks, then, scripts need to be rechecked.
+              If the entered total marks for a student in a course from the two teachers differ by more than 20 marks, then, scripts need to be rechecked.
             </li>
 
             <li id="info5" class="list-group-item list-group-item-primary" style="text-align: justify; color: rgb(0, 0, 139); font-weight: bold;">
