@@ -37,6 +37,9 @@ include_once('dbcon.php');
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
  
 
@@ -70,10 +73,8 @@ include_once('dbcon.php');
         <ul>
           <li><a id="navl1" href="home.php" class="btn btn-primary" 
             style="font-family: Lora; font-size: 1.2em; color: white; font-style: bold">Home</a></li>
-          <li><a id="navl2" href="php_laliga.php" class="btn btn-success" 
+          <li><a id="navl2" href="marksentry.php" class="btn btn-success" 
             style="font-family: Lora; font-size: 1.2em; color: white; font-style: bold">Enter Marks</a></li>
-          <li><a id="navl3" href="php_epl.php" class="btn btn-info" 
-            style="font-family: Lora; font-size: 1.2em; color: white; font-style: bold">Check Marks</a></li>
           
         </ul>
       </nav>
@@ -88,76 +89,38 @@ include_once('dbcon.php');
         <div class="section-title">
           <br>
           
-          <h2 id="siteid">Sports Corner</h2>
-          <h5 id="cruyffquoteid"><q>Soccer is simple, but it is difficult to play simple.</q> - Johan Cruyff</h5>
+          <h2 id="siteid">Result Submission for Dual Examinar</h2>
+          
           <p id="sitedescription" style="color: #000; font-size: 1.2em; font-family: lora ">
-            The most popular sport in world is football (which Americans call Soccer!). 
-            Estimated number of fans of this sport is about 3.5 Billion.
-            On this site, you can check out the current positions of the teams of the top five football leagues in the world. 
+            
           </p>
         </div>
       </div>
-    
     </div>
   </section>
 
-  <main id="allleagues">
 
-    
-    <section id="laliga" class="laliga">
+  <section id="pagebody" class="pagebody">
 
-      <div class="container" data-aos="fade-up">
+    <div class="container" data-aos="fade-up">
 
-        
+      <div class="section-title" style="width: 70%; margin-right: auto;margin-left: auto;">
+
+        <a id="navl1" href="marksentry.php" class="btn btn-primary btn-lg btn-block" 
+        style="font-family: Lora; font-size: 1.5em; color: white; font-style: bold">Enter Marks</a>
+
+        <a id="navl2" href="courseoneresults.php" class="btn btn-primary btn-lg btn-block" 
+        style="font-family: Lora; font-size: 1.5em; color: white; font-style: bold">Display marks by course</a>
+
+        <a id="navl3" href="marksentry.php" class="btn btn-primary btn-lg btn-block" 
+        style="font-family: Lora; font-size: 1.5em; color: white; font-style: bold">Display marks of all students </a>
+
       </div>
-    </section> 
 
+    </div>
+  </section> 
 
-
-
-
-     <section id="epl" class="epl">
-
-      <div class="container" data-aos="fade-up">
-
-        
-        
-      </div>
-    </section> 
-
-  </main>
-
-
-
-
-  <section id="bundesliga" class="bundesliga">
-
-      <div class="container" data-aos="fade-up">
-
-        
-
-        
-      </div>
-    </section> 
-
-
-    <section id="ligueone" class="ligueone">
-
-      <div class="container" data-aos="fade-up">
-
-       
-      </div>
-    </section> 
-
-    <section id="seriea" class="seriea">
-
-      <div class="container" data-aos="fade-up">
-
-        
-      </div>
-    </section> 
-
-  </main>
+  
 
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
