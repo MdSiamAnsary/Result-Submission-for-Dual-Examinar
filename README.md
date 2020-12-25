@@ -47,7 +47,14 @@ Marks are displayed / can be checked in the system by more than one way.
 
 Marks are always displayed in he order of Student IDs. 
 
+###  Development Environment 
 
+Implementation has been done using **XAMPP** on Windows OS PC. 
+
+MySQL (XAMPP) has been used for database operation. 
+A database has been created named `resultsubmissionfordualexaminar` on `phpMyAdmin`.
+The database has two tables. They are `teachers_table` and `marks_table`.
+From the SQL files in the repository, the structures of the tables can be understood. 
 
  
 # Work Information
