@@ -1,5 +1,9 @@
 # Result Submission for Dual Examinar
 
+# Demo Video(s) of Implementation 
+- **Detailed Demo Video** In this demo, the implementation is checked with invalid and valid all types of inputs 
+- **Short Demo Video** In this demo, the implementation is checked with valid inputs 
+
 # Problem Statement(s)
 - Teachers must me registered and logged in the system. 
 - Two teachers will submit marks for 5 students and 3 courses
