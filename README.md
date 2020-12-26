@@ -1,9 +1,10 @@
 # Result Submission for Dual Examinar
 
 ## [Demo Video(s) of Implementation](https://drive.google.com/drive/folders/1nuu-F5zAQZ21Y1xnKLuLa0Z_tG6LTZoB?usp=sharing)
-- [Detailed Demo Video] (https://drive.google.com/file/d/1fde4zpaln1nR1SmeHeMpRw3JMbfx14Ww/view?usp=sharing)
+- [Detailed Demo Video](https://drive.google.com/file/d/1fde4zpaln1nR1SmeHeMpRw3JMbfx14Ww/view?usp=sharing) : 
    In this demo, the implementation is checked with invalid and valid all types of inputs 
-- **Short Demo Video** In this demo, the implementation is checked with valid inputs 
+- [Short Demo Video](https://drive.google.com/file/d/1fde4zpaln1nR1SmeHeMpRw3JMbfx14Ww/view?usp=sharing) : 
+   In this demo, the implementation is checked with valid inputs 
 
 # Problem Statement(s)
 - Teachers must me registered and logged in the system. 
